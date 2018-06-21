@@ -1,0 +1,180 @@
+/* core styles */
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #333;
+	color: #fff;
+	font-size: 1.1em;
+	line-height: 1.5;
+	text-align: center;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 1em 0;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
+}
+
+
+#showcase {
+	min-height: 450px;
+	color: #fff;
+	text-align: center;
+}
+
+#showcase .bg-image {
+	position: absolute;
+	background: #333 url('https://images.pexels.com/photos/212324/pexels-photo-212324.jpeg?cs=srgb&dl=blade-blur-dew-212324.jpg&fm=jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+	z-index: -1;
+	opacity: 0.6;
+}
+
+#showcase h1 {
+	padding-top: 100px;
+	padding-bottom: 0;
+	font-size: 60px;
+}
+
+#showcase p {
+	font-size: 25px;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+	padding: 0 1em;
+}
+
+/*section a*/
+
+#section-a {
+	background: #eaeaea;
+	color: #333;
+	padding-bottom: 2em;
+}
+
+/*section b*/
+
+#section-b {
+	padding: 2em 1em 1em;
+}
+
+#section-b ul {
+	list-style: none;
+	margin: 0;
+	padding: 0; 
+}
+
+#section-b li {
+	margin-bottom: 1em;
+	background: #fff;
+	color: #333;
+}
+
+.card-content {
+	padding: 1.5em;
+}
+
+/*section c*/
+
+#section-c {
+	background: #eaeaea;
+	color: #333;
+	padding: 2em;
+}
+
+/*section d  */
+
+#section-d h2, li {
+
+	color: #fff;
+}
+
+#section-d {
+	background: #365a36;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 2em;
+}
+
+/*footer*/
+
+#main-footer {
+	padding: 2em;
+	background: #000;
+	color: #fff;
+	text-align: center;
+}
+
+#main-footer a {
+	color: #365a36;
+	text-decoration: none;
+}
+
+
+/*media queries */
+
+@media(min-width: 700px) {
+	.grid {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: 1fr (minmax(auto, 25em))[2] 1fr;
+		    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+	}
+
+	#section-a .content-text {
+		-webkit-columns: 2;
+		        columns: 2;
+		-webkit-column-gap: 2em;
+		        column-gap: 2em;
+	}
+
+	#section-a .content-text p {
+		padding-top: 0;
+	}
+
+	.content-wrap, 
+	#section-b ul {
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 2;
+		grid-column: 2/4;
+	}
+
+	.box, #main-footer div {
+	grid-column: span 2;
+}
+
+	#section-b ul {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
+	}
+
+	#section-b li {
+		width: 31%;
+
+	}
+
+}
