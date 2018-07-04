@@ -35,7 +35,7 @@ p {
 
 #showcase .bg-image {
 	position: absolute;
-	background: #333 url('https://images.pexels.com/photos/212324/pexels-photo-212324.jpeg?cs=srgb&dl=blade-blur-dew-212324.jpg&fm=jpg');
+	background: #333 url(images/grass2.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
